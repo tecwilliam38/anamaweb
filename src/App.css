@@ -40,3 +40,28 @@
 .read-the-docs {
   color: #888;
 }
+/* Bootstrap */
+
+.fixed-side {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 16.6667%; /* 2 colunas do Bootstrap (12 cols total) */
+  z-index: 1000;
+}
+
+.right-side {
+  right: 0;
+}
+
+.scroll-center {
+  margin-left: 16.6667%;
+  margin-right: 16.6667%;
+  overflow-y: scroll;
+  height: 100vh;
+  padding: 20px;
+}
+
+.content {
+  padding-bottom: 100px;
+}
