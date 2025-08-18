@@ -2,8 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./styles.css"
+import api from "../../api/api.js"
 
-import api from '../../api/api';
 import { useAuth } from '../../context/authContext';
 
 export default function SignInScreen() {
@@ -21,13 +21,18 @@ export default function SignInScreen() {
   async function HandleLogin(e) {
     e.preventDefault();
     setMsg("");
-    try {      
-      const response = await api.post("/user/register", {
-        user_name,
-        endereco,
-        user_cel_phone,
+    // "user_email": "will@tamojubnto.com",
+    //   "password": "123456",
+    //     "user_name": "Will",
+    //       "user_cel_phone": 1234568888,
+    //         "endereco": "Rua dezesseis"
+    // user_name,
+    // user_cel_phone,
+    // endereco
+    try {
+      const response = await api.post("/user/login", {
         user_email: email,
-        user_password: password
+        password: password
       });
       if (response.data) {
         // Armazenar os dados da response em variáveis - "sessionToken, sessionId..."
@@ -47,7 +52,7 @@ export default function SignInScreen() {
   return (
     <div className='bg-image container-fluid min-vh-100 d-flex align-items-center justify-content-center'>
       <div className="bg-form p-3 margin-style">
-        <form className="form-signin w-100" style={{ maxWidth: "400px" }}>          
+        <form className="form-signin w-100" style={{ maxWidth: "400px" }}>
           <input
             type="email"
             placeholder="E-mail"
