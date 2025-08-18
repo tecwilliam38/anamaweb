@@ -23,18 +23,18 @@ export default function SignInScreen() {
     setMsg("");
     try {      
       const response = await api.post("/user/register", {
-        user_email: email,
-        user_password: password,
         user_name,
+        endereco,
         user_cel_phone,
-        endereco
+        user_email: email,
+        user_password: password
       });
       if (response.data) {
         // Armazenar os dados da response em variáveis - "sessionToken, sessionId..."
         const dados = await response.data;
         api.defaults.headers.common['authorization'] = "Bearer " + response.data.token;
         login(dados);
-        navigate("/appointments");
+        navigate("/home");
       } else {
         console.log(response);
       }
@@ -47,14 +47,7 @@ export default function SignInScreen() {
   return (
     <div className='bg-image container-fluid min-vh-100 d-flex align-items-center justify-content-center'>
       <div className="bg-form p-3 margin-style">
-        <form className="form-signin w-100" style={{ maxWidth: "400px" }}>
-          <input
-            type="text"
-            placeholder="Nome"
-            className="form-control mb-3"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+        <form className="form-signin w-100" style={{ maxWidth: "400px" }}>          
           <input
             type="email"
             placeholder="E-mail"
