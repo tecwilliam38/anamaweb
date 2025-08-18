@@ -1,0 +1,41 @@
+.navbar-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.bg-nav-menu {
+    background: #165770;
+
+    background: linear-gradient(90deg, rgba(22, 87, 112, 1) 0%, rgba(47, 222, 120, 1) 50%, rgba(240, 226, 98, 1) 100%);
+}
+.bg-section{
+    background-color: #f2f4f7!important;
+}
+.icon-grande {
+    font-size: 30px;
+    color: #fff;
+}
+
+.icon-medio {
+    font-size: 35px;
+    color: #fff;
+}
+.icon-pequeno {
+    font-size: 25px;    
+}
+.margin-page{
+    margin: 6.9% auto!important;
+}
+.bg-top{
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 15px #999;
+    border-radius: 20px;
+}
+.rounded-card{
+    box-shadow: 0 3px 15px #999;
+    border-radius: 20px;
+}
+
