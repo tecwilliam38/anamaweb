@@ -10,8 +10,9 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem("user", JSON.stringify(userData));
         setUser(userData);
     };
-    const cadastroTecnico = (userData) => {
-   ;
+    const cadastroUsuário = (userData) => {
+      localStorage.setItem("user", JSON.stringify(userData));
+        setUser(userData);   
     }
     const cadastroClient = (userData) => {
    

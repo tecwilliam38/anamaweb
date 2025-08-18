@@ -19,9 +19,9 @@ export default function SignInScreen() {
     e.preventDefault();
     setMsg("");
     try {
-      const response = await api.post("/admin/login", {
-        email,
-        password
+      const response = await api.post("/user/register", {
+        user_email: email,
+        user_password: password
       });
             if (response.data) {
         // Armazenar os dados da response em variáveis - "sessionToken, sessionId..."
@@ -33,10 +33,10 @@ export default function SignInScreen() {
         console.log(response);
       }
     } catch (error) {
-
+      console.log(error);
+      
     }
 
-    alert("logou")
   }
   return (
     <div className='bg-image container-fluid min-vh-100 d-flex align-items-center justify-content-center'>
