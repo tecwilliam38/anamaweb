@@ -21,15 +21,7 @@ export default function SignInScreen() {
   async function HandleLogin(e) {
     e.preventDefault();
     setMsg("");
-    // "user_email": "will@tamojubnto.com",
-    //   "password": "123456",
-    //     "user_name": "Will",
-    //       "user_cel_phone": 1234568888,
-    //         "endereco": "Rua dezesseis"
-    // user_name,
-    // user_cel_phone,
-    // endereco
-    try {
+     try {
       const response = await api.post("/user/login", {
         user_email: email,
         password: password
