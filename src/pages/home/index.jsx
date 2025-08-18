@@ -6,7 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Cocar from "../../assets/modelo.png"
 
 export default function HomeScreen() {
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
 
   const menuItems = [
     { icon: 'bi-house-door-fill', label: 'Home' },
@@ -54,9 +54,12 @@ export default function HomeScreen() {
         </header>
 
       </div>
-      <section className='row d-flex margin-page justify-content-center bg-section algin-items-center'>
+      <section className='row d-flex margin-page justify-content-center bg-section algin-items-center text-dark'>
         <div className="col-3 d-flex justify-content-start py-3 px-4"
-          style={{ overflowY: 'auto', height: '100%' }}>Esquerda</div>
+          style={{ overflowY: 'auto', height: '100%', color:"#000" }}>Nome do usuário: 
+          <hr/>
+          { user.user_email}          
+          </div>
         {/* centro */}
         <div className="col-6 px-4 justify-content-center"
           style={{ overflowX: 'auto', height: '100%', width: "100%" }}>
