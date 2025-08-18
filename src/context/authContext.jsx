@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem("user", JSON.stringify(userData));
         setUser(userData);
     };
-    const cadastroUsuário = (userData) => {
+    const cadastroUsuario = (userData) => {
       localStorage.setItem("user", JSON.stringify(userData));
         setUser(userData);   
     }
@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
     }, []);
 
     return (
-        <AuthContext.Provider value={{ user, login, logout, cadastroTecnico, cadastroClient }}>
+        <AuthContext.Provider value={{ user, login, logout, cadastroUsuario, cadastroClient }}>
             {children}
         </AuthContext.Provider>
     );

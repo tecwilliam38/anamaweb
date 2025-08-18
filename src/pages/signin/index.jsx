@@ -13,28 +13,34 @@ export default function SignInScreen() {
   const navigate = useNavigate();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const [user_name, setUser_name] = useState("William Ferreira da Silva");
+  const [user_cel_phone, setUser_cel_phone] = useState(21969203932)
+  const [endereco, setEndereco] = useState("Rua dezesseies nº 869, jardim da paz")
   const [visible, setVisible] = useState(false);
 
   async function HandleLogin(e) {
     e.preventDefault();
     setMsg("");
-    try {
+    try {      
       const response = await api.post("/user/register", {
         user_email: email,
-        user_password: password
+        user_password: password,
+        user_name,
+        user_cel_phone,
+        endereco
       });
-            if (response.data) {
+      if (response.data) {
         // Armazenar os dados da response em variáveis - "sessionToken, sessionId..."
         const dados = await response.data;
         api.defaults.headers.common['authorization'] = "Bearer " + response.data.token;
         login(dados);
-        navigate("/appointments");        
+        navigate("/appointments");
       } else {
         console.log(response);
       }
     } catch (error) {
       console.log(error);
-      
+
     }
 
   }
@@ -42,6 +48,13 @@ export default function SignInScreen() {
     <div className='bg-image container-fluid min-vh-100 d-flex align-items-center justify-content-center'>
       <div className="bg-form p-3 margin-style">
         <form className="form-signin w-100" style={{ maxWidth: "400px" }}>
+          <input
+            type="text"
+            placeholder="Nome"
+            className="form-control mb-3"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <input
             type="email"
             placeholder="E-mail"
@@ -63,13 +76,13 @@ export default function SignInScreen() {
             ></i>
           </div>
         </form>
-       <button
-            onClick={HandleLogin}
-            className="btn btn-primary w-100 button-login p-2"
-            type="button"
-          >
-            Login
-          </button>
+        <button
+          onClick={HandleLogin}
+          className="btn btn-primary w-100 button-login p-2"
+          type="button"
+        >
+          Login
+        </button>
       </div>
     </div>
   )
