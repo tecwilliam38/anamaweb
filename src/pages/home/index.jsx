@@ -56,13 +56,17 @@ export default function HomeScreen() {
       </div>
       <section className='row d-flex margin-page justify-content-center bg-section algin-items-center text-dark'>
         <div className="col-3 d-flex justify-content-start py-3 px-4"
-          style={{ overflowY: 'auto', height: '100%', color:"#000" }}>Nome do usuário: 
+          style={{ overflowY: 'auto', height: '100%', color:"#000" }}>
+              <strong>Nome do usuário:</strong>
           <hr/>
-          { user.user_email}          
+
+          { user.user_email}    
+          {/* <div style={{height:'1500vh'}}>
+            Nova div</div>       */}
           </div>
         {/* centro */}
         <div className="col-6 px-4 justify-content-center"
-          style={{ overflowX: 'auto', height: '100%', width: "100%" }}>
+          style={{ overflowY: 'auto', height: '100%', width: "100%" }}>
         <div className="bg-top">
             <div className="col-12 d-flex justify-content-around">
               <div className="row">
