@@ -11,7 +11,7 @@
     background: linear-gradient(90deg, rgba(22, 87, 112, 1) 0%, rgba(47, 222, 120, 1) 50%, rgba(240, 226, 98, 1) 100%);
 }
 .bg-section{
-    background-color: #f2f4f7!important;
+    background-color: #ccc!important;
 }
 .icon-grande {
     font-size: 30px;
@@ -26,7 +26,8 @@
     font-size: 25px;    
 }
 .margin-page{
-    margin: 6.9% auto!important;
+    margin: 6.1% auto!important;
+    padding-top: 1.5%!important;
 }
 .bg-top{
     background-color: #fff;

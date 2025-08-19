@@ -63,7 +63,7 @@ export default function HomeScreen() {
         {/* centro */}
         <div className="col-6 px-4 justify-content-center"
           style={{ overflowX: 'auto', height: '100%', width: "100%" }}>
-          <div className="bg-top">
+        <div className="bg-top">
             <div className="col-12 d-flex justify-content-around">
               <div className="row">
                 <img className="navbar-logo" src={Anama} />
