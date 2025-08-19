@@ -78,11 +78,11 @@ export default function HomeScreen() {
                 </form>
               </div>
             </div>
-              <hr className='col-10' />
+            <hr className='col-10' />
             <ul className="nav px-5 pb-2" style={{ height: 'auto', justifyContent: "space-around" }}>
               <li className="nav-item  text-danger fw-bold justify-content-around">
                 <i className="bi bi-camera-reels-fill icon-pequeno text-danger m-2 d-block mb-1">
-                    {"\t\t\t\t\t\t"} Vídeo ao vivo                  
+                  {"\t\t\t\t\t\t"} Vídeo ao vivo
                 </i>
 
               </li>
@@ -90,18 +90,42 @@ export default function HomeScreen() {
                 <i className="bi bi-images text-success icon-pequeno text-success m-2 d-block mb-1">
                   {"\t\t\t\t\t"}Foto/vídeo
                 </i>
-                
+
               </li>
               <li className="nav-item text-danger fw-bold justify-content-around">
                 <i className="bi bi-film icon-pequeno text-danger m-2 d-block mb-1">
                   {"\t\t\t\t\t"}Reel
                 </i>
-                
+
               </li>
             </ul>
           </div>
           <div className="card text-dark rounded-card mb-3">
-            <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            <div className="row justify-content-around px-2 mt-2">
+              <div className="col-8">
+                <div className="row">
+                  <div className="col-3">
+                    <img className="navbar-logo" src={Anama} />
+                  </div>
+                  <div className="col-8 mt-2">
+                    <div className="row px-2 font-weight-bold">
+                      {user.user_email}
+                    </div>
+                    <div className="row px-2">
+                      {user.user_name}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row justify-content-center vh-100">
+                  Final
+                </div>
+              </div>
+              <div className="col-12">
+                <p className="card-text py-3 col-12">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+              </div>
+            </div>
             <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
@@ -109,7 +133,31 @@ export default function HomeScreen() {
             </div>
           </div>
           <div className="card rounded-card mb-3 text-dark">
-            <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            <div className="row justify-content-around px-2 mt-2">
+              <div className="col-8">
+                <div className="row">
+                  <div className="col-3">
+                    <img className="navbar-logo" src={Anama} />
+                  </div>
+                  <div className="col-8 mt-2">
+                    <div className="row px-2 font-weight-bold">
+                      {user.user_email}
+                    </div>
+                    <div className="row px-2">
+                      {user.user_name}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row justify-content-center vh-100">
+                  Final
+                </div>
+              </div>
+              <div className="col-12">
+                <p className="card-text py-3 col-12">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+              </div>
+            </div>
             <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
@@ -118,7 +166,31 @@ export default function HomeScreen() {
             </div>
           </div>
           <div className="card rounded-card mb-3 text-dark">
-            <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            <div className="row justify-content-around px-2 mt-2">
+              <div className="col-8">
+                <div className="row">
+                  <div className="col-3">
+                    <img className="navbar-logo" src={Anama} />
+                  </div>
+                  <div className="col-8 mt-2">
+                    <div className="row px-2 font-weight-bold">
+                      {user.user_email}
+                    </div>
+                    <div className="row px-2">
+                      {user.user_name}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row justify-content-center vh-100">
+                  Final
+                </div>
+              </div>
+              <div className="col-12">
+                <p className="card-text py-3 col-12">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+              </div>
+            </div>
             <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
@@ -127,7 +199,31 @@ export default function HomeScreen() {
             </div>
           </div>
           <div className="card rounded-card mb-3 text-dark">
-            <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            <div className="row justify-content-around px-2 mt-2">
+              <div className="col-8">
+                <div className="row">
+                  <div className="col-3">
+                    <img className="navbar-logo" src={Anama} />
+                  </div>
+                  <div className="col-8 mt-2">
+                    <div className="row px-2 font-weight-bold">
+                      {user.user_email}
+                    </div>
+                    <div className="row px-2">
+                      {user.user_name}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row justify-content-center vh-100">
+                  Final
+                </div>
+              </div>
+              <div className="col-12">
+                <p className="card-text py-3 col-12">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+              </div>
+            </div>
             <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
@@ -136,6 +232,31 @@ export default function HomeScreen() {
             </div>
           </div>
           <div className="card rounded-card mb-3">
+            <div className="row justify-content-around px-2 mt-2">
+              <div className="col-8">
+                <div className="row">
+                  <div className="col-3">
+                    <img className="navbar-logo" src={Anama} />
+                  </div>
+                  <div className="col-8 mt-2">
+                    <div className="row px-2 font-weight-bold">
+                      {user.user_email}
+                    </div>
+                    <div className="row px-2">
+                      {user.user_name}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row justify-content-center vh-100">
+                  Final
+                </div>
+              </div>
+              <div className="col-12">
+                <p className="card-text py-3 col-12">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+              </div>
+            </div>
             <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
@@ -144,6 +265,27 @@ export default function HomeScreen() {
             </div>
           </div>
           <div className="card rounded-card mb-3">
+            <div className="row justify-content-around px-2 mt-2">
+              <div className="col-8">
+                <div className="row">
+                  <div className="col-3">
+                    <img className="navbar-logo" src={Anama} />
+                  </div>
+                  <div className="col-8 mt-2">
+                    <div className="row px-2 font-weight-bold">
+                      {user.user_email}
+                    </div>
+                    <div className="row px-2">
+                      {user.user_name}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-2 mt-3 text-light bg-dark">Final</div>
+              <div className="col-12">
+                <p className="card-text py-3 col-12">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+              </div>
+            </div>
             <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
