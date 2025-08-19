@@ -55,12 +55,12 @@ export default function HomeScreen() {
 
       </div>
       <section className='row d-flex margin-page justify-content-center bg-section algin-items-center text-dark'>
-        <div className="col-3 d-flex justify-content-start py-3 px-4"
-          style={{ overflowY: 'auto', height: '100%', color:"#000" }}>
-              <strong>Nome do usuário:</strong>
-          <hr/>
+        <div className="col-3 d-flex justify-content-start py-3 px-4 "
+          style={{ overflowY: 'auto', height: '100%', color:"#000", alignItems:"center", fontWeight:"bold", fontSize:18 }}>
+              <img className="navbar-logo" src={Anama} />
+          {/* <hr/> */}
 
-          { user.user_email}    
+          { user.user_name}    
           {/* <div style={{height:'1500vh'}}>
             Nova div</div>       */}
           </div>
