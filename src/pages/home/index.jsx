@@ -56,18 +56,18 @@ export default function HomeScreen() {
       </div>
       <section className='row d-flex margin-page justify-content-center bg-section algin-items-center text-dark'>
         <div className="col-3 d-flex justify-content-start py-3 px-4 "
-          style={{ overflowY: 'auto', height: '100%', color:"#000", alignItems:"center", fontWeight:"bold", fontSize:18 }}>
-              <img className="navbar-logo" src={Anama} />
+          style={{ overflowY: 'auto', height: '100%', color: "#000", alignItems: "center", fontWeight: "bold", fontSize: 18 }}>
+          <img className="navbar-logo" src={Anama} />
           {/* <hr/> */}
 
-          { user.user_name}    
+          {user.user_name}
           {/* <div style={{height:'1500vh'}}>
             Nova div</div>       */}
-          </div>
+        </div>
         {/* centro */}
         <div className="col-6 px-4 justify-content-center"
           style={{ overflowY: 'auto', height: '100%', width: "100%" }}>
-        <div className="bg-top">
+          <div className="bg-top">
             <div className="col-12 d-flex justify-content-around">
               <div className="row">
                 <img className="navbar-logo" src={Anama} />
@@ -78,21 +78,31 @@ export default function HomeScreen() {
                 </form>
               </div>
             </div>
-            <ul class="nav" style={{ height: 'auto', justifyContent: "space-around" }}>
-              <li class="nav-item">
-                <i className="bi bi-camera-reels-fill icon-pequeno text-danger m-2 d-block mb-1">Vídeo ao vivo</i>
+              <hr className='col-10' />
+            <ul className="nav px-5 pb-2" style={{ height: 'auto', justifyContent: "space-around" }}>
+              <li className="nav-item  text-danger fw-bold justify-content-around">
+                <i className="bi bi-camera-reels-fill icon-pequeno text-danger m-2 d-block mb-1">
+                    {"\t\t\t\t\t\t"} Vídeo ao vivo                  
+                </i>
+
               </li>
-              <li class="nav-item">
-                <i class="bi bi-images text-success icon-pequeno">Foto/vídeo</i>
+              <li className="nav-item text-success fw-bold justify-content-around">
+                <i className="bi bi-images text-success icon-pequeno text-success m-2 d-block mb-1">
+                  {"\t\t\t\t\t"}Foto/vídeo
+                </i>
+                
               </li>
-              <li class="nav-item">
-                <i class="bi bi-film icon-pequeno text-danger m-2 d-block mb-1">Reel</i>
+              <li className="nav-item text-danger fw-bold justify-content-around">
+                <i className="bi bi-film icon-pequeno text-danger m-2 d-block mb-1">
+                  {"\t\t\t\t\t"}Reel
+                </i>
+                
               </li>
             </ul>
           </div>
           <div className="card text-dark rounded-card mb-3">
-              <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-            <img className="card-img-top" style={{borderRadius:12}} src={Cocar} alt="Imagem de capa do card" />
+            <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
               <a href="#" className="btn btn-primary">Visitar</a>
@@ -100,16 +110,7 @@ export default function HomeScreen() {
           </div>
           <div className="card rounded-card mb-3 text-dark">
             <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-            <img className="card-img-top" style={{borderRadius:12}} src={Cocar} alt="Imagem de capa do card" />
-            <div className="card-body">
-              <h5 className="card-title">Título do card</h5>
-              <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-              <a href="#" className="btn btn-primary">Visitar</a>
-            </div>
-          </div>
-          <div className="card rounded-card mb-3 text-dark">
-            <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-            <img className="card-img-top" style={{borderRadius:12}} src={Cocar} alt="Imagem de capa do card" />
+            <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
               <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
@@ -118,7 +119,16 @@ export default function HomeScreen() {
           </div>
           <div className="card rounded-card mb-3 text-dark">
             <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-            <img className="card-img-top" style={{borderRadius:12}} src={Cocar} alt="Imagem de capa do card" />
+            <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
+            <div className="card-body">
+              <h5 className="card-title">Título do card</h5>
+              <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+              <a href="#" className="btn btn-primary">Visitar</a>
+            </div>
+          </div>
+          <div className="card rounded-card mb-3 text-dark">
+            <p className="card-text p-3">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
               <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
@@ -126,7 +136,7 @@ export default function HomeScreen() {
             </div>
           </div>
           <div className="card rounded-card mb-3">
-            <img className="card-img-top" style={{borderRadius:12}} src={Cocar} alt="Imagem de capa do card" />
+            <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
               <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
@@ -134,7 +144,7 @@ export default function HomeScreen() {
             </div>
           </div>
           <div className="card rounded-card mb-3">
-            <img className="card-img-top" style={{borderRadius:12}} src={Cocar} alt="Imagem de capa do card" />
+            <img className="card-img-top" style={{ borderRadius: 12 }} src={Cocar} alt="Imagem de capa do card" />
             <div className="card-body">
               <h5 className="card-title">Título do card</h5>
               <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
